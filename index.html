@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ascending()" style="background-color: aqua; border-radius: 0.5cm; border-style: dashed;">Ascending order</button>
+    <button onclick="descinding()" style="background-color: aqua; border-radius: 0.5cm; border-style: dashed;">Descending order</button>
+    <p id="result"></p>
+
+    <script>
+        var numbers=[55,48,778,5456,54848,48,450];
+        document.getElementById("result").innerHTML = numbers;
+        function ascending(){
+            numbers.sort(function(a,b){return a-b});
+            document.getElementById("result").innerHTML = numbers;
+        }
+        function descinding(){
+            numbers.sort(function(a,b){return b-a});
+            document.getElementById("result").innerHTML = numbers;
+        }
+    </script>
+    
+</body>
+</html>
